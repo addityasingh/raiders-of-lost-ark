@@ -45,13 +45,13 @@ pub fn run(config: Config) -> Result<(), Box<Error>> {
 
 pub fn search<'a>(contents: &'a str, query: &'a str) -> Vec<String> {
     let mut result: Vec<String> = vec![];
-    let mut replacedLine: String;
+    let mut replaced_line: String;
 
     for line in contents.lines() {
         if line.contains(query) {
-            let mut replacedVal = &Green.paint(query.clone()).to_string();
-            replacedLine = str::replace(&line, &query, &replacedVal);
-            result.push(replacedLine.trim().to_string());
+            let replaced_val = &Green.paint(query.clone()).to_string();
+            replaced_line = str::replace(&line, &query, &replaced_val);
+            result.push(replaced_line.trim().to_string());
         }
     }
     
@@ -63,15 +63,15 @@ pub fn search_case_insensitive<'a>(
     query: &'a str) -> Vec<String> {
     let query = query.to_lowercase();
     let mut result: Vec<String> = vec![];
-    let mut replacedLine: String;
+    let mut replaced_line: String;
 
     //TODO: Use search to acheive this
     // TODO: Handle the case insensitive highlight correctly
     for line in contents.lines() {
         if line.to_lowercase().contains(&query) {
-            let mut replacedVal = &Green.paint(query.clone()).to_string();
-            replacedLine = str::replace(&line, &query, &replacedVal);
-            result.push(replacedLine.trim().to_string());
+            let replaced_val = &Green.paint(query.clone()).to_string();
+            replaced_line = str::replace(&line, &query, &replaced_val);
+            result.push(replaced_line.trim().to_string());
         }
     }
     
