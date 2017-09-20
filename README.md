@@ -5,4 +5,6 @@ A CLI to search from files and directories. A mini version of grep
 - Highlight the search result
 - Find count of all occurrences
 
+![highlight for search result](https://github.com/addityasingh/learn-rust/blob/master/minigrep/images/syntax-highlight.png)
+
 ## Benchmarks
