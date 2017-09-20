@@ -12,3 +12,14 @@ A CLI to search from files and directories. A mini version of grep
 ![highlight for search result](https://github.com/addityasingh/raiders-of-lost-ark/blob/master/images/syntax-highlight.png)
 
 ## Benchmarks
+```bash
+cargo bench
+```
+
+The result of running the above on the benchmark test in benches is
+
+```bash
+running 2 tests
+test tests::bench_search_empty    ... bench:         280 ns/iter (+/- 119)
+test tests::bench_search_nonempty ... bench:         814 ns/iter (+/- 401)
+```
