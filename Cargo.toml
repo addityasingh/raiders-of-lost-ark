@@ -1,0 +1,7 @@
+[package]
+name = "rola"
+version = "0.1.0"
+authors = ["Aditya Pratap Singh <adisinghrajput@gmail.com>"]
+
+[dependencies]
+ansi_term = "0.9"
