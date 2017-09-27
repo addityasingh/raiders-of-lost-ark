@@ -5,3 +5,9 @@ authors = ["Aditya Pratap Singh <adisinghrajput@gmail.com>"]
 
 [dependencies]
 ansi_term = "0.9"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
